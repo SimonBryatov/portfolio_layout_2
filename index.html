@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Portfolio App 2018</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1232">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="header__top_content">
+                        <div class="logo">
+                            <div class="logo__container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="185px" height="56px">
+                                    <defs>
+                                        <filter id="Filter_0">
+                                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                                        </filter>
+
+                                    </defs>
+                                    <g filter="url(#Filter_0)">
+                                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.641 L46.303,43.641 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.202 L43.676,22.202 L38.422,31.390 L33.168,22.202 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.006 L37.108,9.184 L26.600,9.184 L31.854,-0.006 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.641 L12.151,34.451 L17.404,43.641 L6.897,43.641 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.202 L25.286,31.390 L20.032,22.202 L30.540,22.202 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z" />
+                                    </g>
+                                    <text font-family="Raleway" fill="rgb(255, 255, 255)" font-size="34px" x="66px" y="41.062px">Waxom</text>
+                                </svg></div>
+                        </div>
+                        <div class="navbar">
+                            <a href="#" class="navlink">Home</a>
+                            <a href="#" class="navlink">About Us</a>
+                            <a href="#" class="navlink">Portfolio</a>
+                            <a href="#" class="navlink">Features</a>
+                            <a href="#" class="navlink">Blog</a>
+                            <a href="#" class="navlink">Pricing</a>
+                            <a href="#" class="navlink">Shortcodes</a>
+                            <a href="#" class="navlink">Contact</a>
+                        </div>
+                        <div class="nav-actions">
+                            <div class="nav-actions__button cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="24px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="nav-action" d="M14.995,2.999 L13.496,2.999 C13.496,1.342 11.483,-0.002 8.999,-0.002 C6.514,-0.002 4.501,1.342 4.501,2.999 L3.002,2.999 C1.346,2.999 0.003,4.341 0.003,5.997 L0.003,20.995 C0.003,22.651 1.346,23.994 3.002,23.994 L14.995,23.994 C16.652,23.994 17.994,22.651 17.994,20.995 L17.994,5.997 C17.994,4.341 16.652,2.999 14.995,2.999 ZM8.999,1.498 C10.655,1.498 11.997,1.962 11.997,2.999 L6.000,2.999 C6.000,1.962 7.343,1.498 8.999,1.498 ZM16.495,20.995 C16.495,21.823 15.824,22.494 14.995,22.494 L3.002,22.494 C2.174,22.494 1.502,21.823 1.502,20.995 L1.502,19.495 L16.495,19.495 L16.495,20.995 ZM16.495,17.995 L1.502,17.995 L1.502,5.997 C1.502,5.169 2.174,4.497 3.002,4.497 L4.501,4.497 L4.501,8.998 L6.000,8.998 L6.000,4.497 L11.997,4.497 L11.997,8.998 L13.496,8.998 L13.496,4.497 L14.995,4.497 C15.824,4.497 16.495,5.169 16.495,5.997 L16.495,17.995 Z" />
+                                    </g>
+                                </svg></div>
+                            <div class="nav-actions__button search">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="24px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="nav-action" d="M23.762,22.681 L17.569,16.586 C19.190,14.825 20.187,12.494 20.187,9.929 C20.186,4.443 15.668,-0.002 10.093,-0.002 C4.519,-0.002 0.001,4.443 0.001,9.929 C0.001,15.416 4.519,19.862 10.093,19.862 C12.502,19.862 14.711,19.028 16.446,17.644 L22.663,23.763 C22.966,24.062 23.458,24.062 23.761,23.763 C24.065,23.464 24.065,22.979 23.762,22.681 ZM10.093,18.334 C5.377,18.334 1.553,14.572 1.553,9.929 C1.553,5.288 5.377,1.525 10.093,1.525 C14.810,1.525 18.633,5.288 18.633,9.929 C18.633,14.572 14.810,18.334 10.093,18.334 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__slider">
+                    <div>
+                        <svg class="header__slider_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="40px" height="73px">
+                            <defs>
+                                <filter id="Filter_0">
+                                    <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                                    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                                    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                                </filter>
+
+                            </defs>
+                            <g>
+                                <path fill-rule="evenodd" class="slider-arrow-icon" d="M38.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L4.066,36.498 L39.995,70.977 L38.026,72.979 Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="header__slider_content">
+                        <div class="header__slider_content-1">Unique and Modern Design</div>
+                        <div class="header__slider_content-2">Portfolio PSD Template</div>
+                        <div class="header__slider_content-3">Nam liber tempor cum soluta nobis eleifend option congue
+                            nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
+                        <div class="header__slider_content-4"><button class="btn-base">GET STARTED</button></div>
+                    </div>
+                    <div>
+                        <svg class="header__slider_arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="40px" height="73px">
+                            <g>
+                                <path fill-rule="evenodd" class="slider-arrow-icon" d="M1.974,72.979 L39.995,36.498 L1.974,0.018 L0.005,2.022 L35.934,36.498 L0.005,70.977 L1.974,72.979 Z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="slider_dots-container">
+                    <div class="slider_dots">
+                        <div class="slider_dot"></div>
+                        <div class="slider_dot slider_dot--active"></div>
+                        <div class="slider_dot"></div>
+                        <div class="slider_dot"></div>
+                        <div class="slider_dot"></div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="section-1">
+                    <div class="section-1__category_tabs">
+                        <div class="section-1__category_tab">
+                            <div class="section-1__category_tab-field-1">
+                                <svg classxmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="49px" height="49px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="section-1__icon" d="M47.668,19.717 L33.402,33.985 L0.534,48.463 L15.011,15.591 L29.279,1.327 C29.898,0.706 30.904,0.706 31.527,1.327 C32.148,1.950 32.148,2.955 31.527,3.576 L17.683,17.422 L9.107,36.888 L12.106,39.887 L31.573,31.314 L45.420,17.470 C46.039,16.847 47.043,16.847 47.668,17.470 C48.289,18.090 48.289,19.100 47.668,19.717 ZM29.745,28.466 C29.434,28.773 29.028,28.931 28.620,28.931 C28.211,28.931 27.805,28.773 27.495,28.466 C26.875,27.843 26.875,26.836 27.495,26.216 L40.827,12.885 C41.450,12.260 42.454,12.260 43.077,12.885 C43.700,13.505 43.700,14.510 43.077,15.134 L29.745,28.466 ZM26.265,24.985 C25.955,25.293 25.549,25.450 25.140,25.450 C24.734,25.450 24.326,25.293 24.015,24.985 C23.394,24.364 23.394,23.354 24.015,22.735 L37.348,9.403 C37.970,8.780 38.974,8.780 39.598,9.403 C40.219,10.023 40.219,11.030 39.598,11.653 L26.265,24.985 ZM22.784,21.502 C22.473,21.814 22.065,21.968 21.659,21.968 C21.253,21.968 20.845,21.814 20.534,21.502 C19.914,20.883 19.914,19.873 20.534,19.253 L33.867,5.922 C34.490,5.298 35.495,5.298 36.117,5.922 C36.739,6.542 36.739,7.548 36.117,8.172 L22.784,21.502 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="section-1__category_tab-field-2">Web & App Design</div>
+                            <p class="section-1__category_tab-field-3">Nam liber tempor cum soluta nobis eleifend
+                                option congue nihil imperdiet doming id quod mazim.</p>
+                            <div class="section-1__category_tab-field-4"></div>
+                        </div>
+                        <div class="section-1__category_tab">
+                            <div class="section-1__category_tab-field-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="44px" height="40px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="section-1__icon section-1__icon" d="M0.414,19.697 L4.399,17.548 L21.851,26.958 L39.302,17.548 L43.287,19.697 L21.851,31.253 L0.414,19.697 ZM0.414,11.666 L21.851,0.106 L43.287,11.666 L21.851,23.227 L0.414,11.666 ZM21.851,34.985 L39.302,25.573 L43.287,27.721 L21.851,39.283 L0.414,27.721 L4.399,25.573 L21.851,34.985 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="section-1__category_tab-field-2">Development</div>
+                            <p class="section-1__category_tab-field-3">Lorem ipsum dolor sit amet, adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            <div class="section-1__category_tab-field-4 section-1__category_tab-field-4"></div>
+                        </div>
+                        <div class="section-1__category_tab">
+                            <div class="section-1__category_tab-field-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="44px" height="44px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="section-1__icon" d="M43.927,21.850 C43.927,20.230 42.761,18.501 41.322,17.993 C39.882,17.483 38.487,16.235 38.081,15.251 C37.675,14.269 37.781,12.396 38.436,11.017 C39.092,9.638 38.695,7.591 37.550,6.443 C36.404,5.297 34.357,4.902 32.977,5.558 C31.597,6.214 29.727,6.322 28.746,5.915 C27.765,5.510 26.517,4.112 26.005,2.673 C25.493,1.234 23.764,0.067 22.144,0.067 C20.523,0.067 18.794,1.234 18.282,2.673 C17.770,4.112 16.522,5.509 15.541,5.915 C14.560,6.322 12.690,6.214 11.310,5.558 C9.932,4.902 7.883,5.297 6.737,6.443 C5.592,7.591 5.195,9.638 5.851,11.017 C6.507,12.397 6.611,14.266 6.204,15.250 C5.796,16.232 4.405,17.483 2.966,17.993 C1.526,18.501 0.360,20.230 0.360,21.850 C0.360,23.471 1.526,25.199 2.966,25.711 C4.405,26.223 5.798,27.474 6.206,28.454 C6.614,29.434 6.507,31.304 5.851,32.683 C5.195,34.062 5.592,36.110 6.737,37.255 C7.883,38.402 9.930,38.799 11.310,38.142 C12.690,37.486 14.560,37.381 15.541,37.789 C16.523,38.196 17.770,39.594 18.282,41.032 C18.794,42.468 20.523,43.633 22.144,43.633 C23.764,43.633 25.493,42.468 26.005,41.032 C26.517,39.594 27.763,38.196 28.744,37.786 C29.725,37.378 31.597,37.486 32.977,38.142 C34.356,38.799 36.404,38.402 37.550,37.255 C38.695,36.110 39.092,34.062 38.436,32.683 C37.781,31.304 37.673,29.433 38.079,28.453 C38.485,27.472 39.882,26.223 41.322,25.711 C42.761,25.199 43.927,23.471 43.927,21.850 ZM22.144,29.842 C17.724,29.842 14.150,26.270 14.150,21.859 C14.150,17.440 17.724,13.865 22.144,13.865 C26.554,13.865 30.128,17.440 30.128,21.859 C30.128,26.270 26.554,29.842 22.144,29.842 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="section-1__category_tab-field-2">Customization</div>
+                            <p class="section-1__category_tab-field-3">Nam liber tempor cum soluta nobis eleifend
+                                option congue nihil imperdiet doming id quod mazim.</p>
+                            <div class="section-1__category_tab-field-4"></div>
+                        </div>
+                        <div class="section-1__category_tab">
+                            <div class="section-1__category_tab-field-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="52px" height="36px">
+                                    <g>
+                                        <path fill-rule="evenodd" class="section-1__icon" d="M51.411,14.341 L41.921,33.763 C41.326,34.984 39.729,35.984 38.378,35.984 L3.080,35.984 C1.730,35.984 1.112,34.982 1.711,33.763 L11.203,14.341 C11.796,13.118 13.392,12.115 14.742,12.115 L50.040,12.115 C51.394,12.115 52.009,13.118 51.411,14.341 ZM9.000,13.245 L0.738,30.147 L0.738,7.983 C0.738,6.619 1.843,5.501 3.196,5.502 L14.012,5.502 L14.012,4.058 C14.012,3.063 14.394,2.135 15.094,1.430 C15.793,0.723 16.717,0.335 17.701,0.335 L23.991,0.335 C26.020,0.335 27.675,2.002 27.675,4.058 L27.675,5.501 L38.491,5.501 C39.842,5.501 40.949,6.619 40.949,7.983 L40.949,9.637 L14.742,9.637 C12.475,9.637 10.002,11.187 9.000,13.245 ZM16.470,5.502 L25.217,5.502 L25.217,4.058 C25.217,3.370 24.667,2.815 23.989,2.815 L17.698,2.815 C17.372,2.815 17.063,2.945 16.832,3.183 C16.602,3.417 16.470,3.730 16.470,4.058 L16.470,5.502 Z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="section-1__category_tab-field-2">Marketing</div>
+                            <p class="section-1__category_tab-field-3">Nam liber tempor cum soluta nobis eleifend
+                                option congue nihil imperdiet doming id quod mazim.</p>
+                            <div class="section-1__category_tab-field-4"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="section-2__text">
+                        <div class="section-2__text-1">Waxom is Realization of your Ideas.</div>
+                        <div class="section-2__text-2">Investigationes demonstraverunt lectores legere me lius quod ii
+                            legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
+                            consuetudium.</div>
+                    </div>
+                </section>
+                <section class="section-3">
+                    <div class="section-3__content">
+                        <div class="section-3__left">
+                            <div class="section-3__left_text-1"><span>Waxom</span> Multipurpose WordPress Theme</div>
+                            <div class="section-3__left_text-2">Don't Forget to Rate the Template. Thanks so much!</div>
+                        </div>
+                        <div class="section-3__right">
+                            <button class="btn-base">PURCHASE NOW</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-4">
+                    <div class="section-4__content">
+                        <div class="section-4__header">
+                            <h2>Our Latest Projects.</h2>
+                            <p class="section-4__header-text">Investigationes demonstraverunt lectores legere me lius
+                                quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                consuetudium.</p>
+                        </div>
+                        <div class="section-4__navs">
+                            <div class="section-4__nav">All</div>
+                            <div class="section-4__nav">Web Design</div>
+                            <div class="section-4__nav">Mobile App</div>
+                            <div class="section-4__nav">Illustration</div>
+                            <div class="section-4__nav">Photography</div>
+                        </div>
+                        <div class="section-4__cards">
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo-3.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Claritas Etiam Processus</h5>
+                                        <div>Photography, Nature</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo-4.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Quam Nutamus Farum</h5>
+                                        <div>Graphic Design, Mock-Up</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo-5.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Claritas Etiam Processus</h5>
+                                        <div>Photography, Holiday</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Claritas Etiam Processus</h5>
+                                        <div>Photography, Nature</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo-1.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Quam Nutamus Farum</h5>
+                                        <div>Graphic Design, Mock-Up</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__card">
+                                <div class="section-4__card_img-container">
+                                    <div class="section-4__card-actions_container">
+                                        <div class="section-4__card-actions">
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="26px">
+                                                    <g>
+                                                        <path fill-rule="evenodd" class="section-4__card-action-btn" d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="section-4__card-action-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    width="26px" height="25px">
+                                                    <g>
+                                                        <path d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="./images/bg photo-2.png">
+                                    <div class="section-4__card_arrow-up"></div>
+                                </div>
+
+                                <div class="section-4__card_description">
+                                    <div>
+                                        <h5>Claritas Etiam Processus</h5>
+                                        <div>Photography, Holiday</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-4__footer"><button class="btn-base">LOAD MORE</button></div>
+                    </div>
+
+
+                </section>
+                <section class="section-5">
+                    <div class="section-5__content">
+                        <div><svg class="section-5__play-btn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="100px" height="100px">
+                                <defs>
+                                    <filter id="Filter_0">
+                                        <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                                    </filter>
+
+                                </defs>
+                                <path fill-rule="evenodd" opacity="0.2" fill="rgb(0, 0, 0)" d="M50.000,-0.000 C77.614,-0.000 100.000,22.386 100.000,50.000 C100.000,77.614 77.614,100.000 50.000,100.000 C22.386,100.000 -0.000,77.614 -0.000,50.000 C-0.000,22.386 22.386,-0.000 50.000,-0.000 Z" />
+                                <g>
+                                    <path fill-rule="evenodd" class="section-5__play-btn" d="M46.253,33.653 L63.967,48.415 C64.437,48.807 64.709,49.386 64.709,49.997 C64.709,50.609 64.437,51.188 63.967,51.580 L46.253,66.343 C45.876,66.657 45.407,66.820 44.934,66.820 C44.638,66.820 44.339,66.755 44.060,66.626 C43.337,66.287 42.874,65.559 42.874,64.760 L42.874,35.235 C42.874,34.436 43.337,33.708 44.060,33.370 C44.783,33.030 45.640,33.141 46.253,33.653 ZM46.994,60.362 L59.431,49.997 L46.994,39.633 L46.994,60.362 ZM74.759,74.759 C68.033,81.484 59.026,84.998 49.937,84.998 C44.072,84.999 38.173,83.536 32.831,80.528 C31.839,79.970 31.488,78.713 32.046,77.722 C32.604,76.731 33.860,76.379 34.852,76.938 C46.870,83.703 62.082,81.611 71.845,71.845 C83.892,59.798 83.892,40.197 71.845,28.150 C59.798,16.101 40.196,16.102 28.150,28.150 C16.104,40.197 16.104,59.798 28.150,71.845 C28.955,72.650 28.955,73.954 28.150,74.759 C27.347,75.563 26.042,75.563 25.237,74.759 C11.584,61.105 11.584,38.890 25.237,25.236 C38.891,11.584 61.104,11.583 74.759,25.236 C88.412,38.890 88.412,61.105 74.759,74.759 Z" />
+                                </g>
+                            </svg></div>
+                        <div class="section-5__title">Waxom Video Presentation</div>
+                        <div class="section-5__text">Investigationes demonstraverunt lectores legere me lius quod ii
+                            legunt saepius, qui sequitur mutationem consuetudium.</div>
+                        <div class="section-5__videotime">03:26</div>
+                    </div>
+                </section>
+                <section class="section-6">
+                    <div class="row section-6__content">
+                        <div class="colsection-6__offset"></div>
+                        <div class="col-xs-offset-5 col-xs-7 section-6__text">
+                            <h2>Excellent for Mobile Devices.</h2>
+                            <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me
+                                lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum
+                                clari, fiant sollemnes in futurum.</p>
+                            <ul>
+                                <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+                                <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                                <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                                <li>Investigationes demonstraverunt lectores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-7">
+                    <div class="row center-xs between-xs section-7__content">
+                        <div class="col-xs-2 info-tab">
+                            <div class="info-tab__icon"><img src="./images/clients.svg" /></div>
+                            <div class="info-tab__header">3587</div>
+                            <div class="info-tab__text">SATISFIED CLIENTS</div>
+                            <div class="info-tab__footer"></div>
+                        </div>
+                        <div class="col-xs-2 info-tab">
+
+                            <div class="info-tab__icon"><img src="./images/coffee.svg" /></div>
+                            <div class="info-tab__header">207</div>
+                            <div class="info-tab__text">CUPS OF COFFEE</div>
+                            <div class="info-tab__footer"></div>
+
+                        </div>
+                        <div class="col-xs-2 info-tab">
+
+                            <div class="info-tab__icon"><img src="./images/blogposts.svg" /></div>
+                            <div class="info-tab__header">2500</div>
+                            <div class="info-tab__text">BLOG POSTS</div>
+                            <div class="info-tab__footer"></div>
+
+                        </div>
+                        <div class="col-xs-2 info-tab">
+
+                            <div class="info-tab__icon"><img src="./images/likes.svg" /></div>
+                            <div class="info-tab__header">873</div>
+                            <div class="info-tab__text">LIKES</div>
+                            <div class="info-tab__footer"></div>
+
+                        </div>
+                        <div class="col-xs-2 info-tab">
+                            <div class="info-tab__icon"><img src="./images/launches.svg" /></div>
+                            <div class="info-tab__header">900</div>
+                            <div class="info-tab__text">WE LAUNCHED</div>
+                            <div class="info-tab__footer"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-8">
+                    <div class="section-8__content">
+                        <h2>Recent Posts.</h2>
+                        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                            etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <div class="row between-xs center-xs middle-xs section-8__cards">
+                            <div class="section-8__card">
+                                <div class="section-8__card_image-container">
+                                    <div class="slider_dots-container">
+                                        <div class="slider_dots">
+                                            <div class="slider_dot"></div>
+                                            <div class="slider_dot slider_dot--active"></div>
+                                            <div class="slider_dot"></div>
+                                            <div class="slider_dot"></div>
+                                            <div class="slider_dot"></div>
+                                        </div>
+                                    </div>
+                                    <div class="section-8__card-datebox">
+                                        <div class="section-8__card-datebox-day">30</div>
+                                        <div class="section-8__card-datebox-month">Sep.</div>
+                                    </div>
+                                    <div class="section-8__card-image_darken-cap"></div>
+                                    <img src="./images/s8photo.png">
+                                </div>
+                                <div class="section-8__card_description">
+                                    <div>
+                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                            consuetudium.</p>
+                                        <a href="#">
+                                            <div>Read More</div>
+                                            <div class="section-8__text-arrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-8__card">
+                                <div class="section-8__card_image-container">
+                                    <div class="section-8__card-datebox">
+                                        <div class="section-8__card-datebox-day">30</div>
+                                        <div class="section-8__card-datebox-month">Sep.</div>
+                                    </div>
+                                    <div class="section-8__card-image_darken-cap"></div>
+                                    <img src="./images/s8photo-1.png">
+                                </div>
+                                <div class="section-8__card_description">
+                                    <div>
+                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                            consuetudium.</p>
+                                        <a href="#">
+                                            <div>Read More</div>
+                                            <div class="section-8__text-arrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-8__card">
+                                <div class="section-8__card_image-container">
+                                    <div class="section-8__card-datebox">
+                                        <div class="section-8__card-datebox-day">30</div>
+                                        <div class="section-8__card-datebox-month">Sep.</div>
+                                    </div>
+                                    <div class="section-8__card-image_darken-cap"></div>
+                                    <img src="./images/s8photo-2.png">
+                                </div>
+                                <div class="section-8__card_description">
+                                    <div>
+                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                            consuetudium.</p>
+                                        <a href="#">
+                                            <div>Read More</div>
+                                            <div class="section-8__text-arrow"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-8__arrows">
+                            <svg class="section-8__arrow-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="22px" height="22px">
+                                <g>
+                                    <path fill-rule="evenodd" class="section-8__arrow" d="M7.583,10.434 L12.355,5.661 C12.642,5.375 13.108,5.375 13.395,5.661 C13.682,5.949 13.682,6.416 13.395,6.702 L9.141,10.957 L13.395,15.211 C13.682,15.498 13.682,15.963 13.395,16.251 C13.108,16.538 12.642,16.538 12.355,16.251 L7.583,11.480 C7.438,11.335 7.366,11.145 7.367,10.957 C7.367,10.767 7.438,10.579 7.583,10.434 ZM10.987,0.026 C17.053,0.026 21.972,4.943 21.972,11.011 C21.972,17.076 17.053,21.995 10.987,21.995 C4.921,21.995 0.003,17.076 0.003,11.011 C0.003,4.943 4.921,0.026 10.987,0.026 ZM10.987,20.523 C16.232,20.523 20.501,16.253 20.501,11.011 C20.501,5.765 16.232,1.497 10.987,1.497 C5.743,1.497 1.475,5.765 1.475,11.011 C1.475,16.253 5.743,20.523 10.987,20.523 Z" />
+                                </g>
+                            </svg>
+                            <svg class="section-8__arrow-container" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="22px" height="22px">
+
+                                <g>
+                                    <path fill-rule="evenodd" class="section-8__arrow" d="M14.417,10.434 L9.645,5.661 C9.358,5.375 8.892,5.375 8.605,5.661 C8.318,5.949 8.318,6.416 8.605,6.702 L12.859,10.957 L8.605,15.211 C8.318,15.498 8.318,15.963 8.605,16.251 C8.892,16.538 9.358,16.538 9.645,16.251 L14.417,11.480 C14.562,11.335 14.634,11.145 14.633,10.957 C14.633,10.767 14.562,10.579 14.417,10.434 ZM11.012,0.026 C4.946,0.026 0.028,4.943 0.028,11.011 C0.028,17.076 4.946,21.995 11.012,21.995 C17.079,21.995 21.997,17.076 21.997,11.011 C21.997,4.943 17.079,0.026 11.012,0.026 ZM11.012,20.523 C5.768,20.523 1.499,16.253 1.499,11.011 C1.499,5.765 5.768,1.497 11.012,1.497 C16.257,1.497 20.525,5.765 20.525,11.011 C20.525,16.253 16.257,20.523 11.012,20.523 Z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-9">
+                    <div class="row middle-xs section-9__content">
+                        <div class="col-xs-3"><img src="./images/logo-01.png"></div>
+                        <div class="col-xs-3"><img src="./images/logo-02.png"></div>
+                        <div class="col-xs-3"><img src="./images/logo-03.png"></div>
+                        <div class="col-xs-3"><img src="./images/logo-04.png"></div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__top_content">
+                    <div class="row footer__top">
+                        <div class="col-xs-3  footer__top_section-1">
+                            <div class="logo__container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="185px" height="56px">
+                                    <defs>
+                                        <filter id="Filter_0">
+                                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                                        </filter>
+
+                                    </defs>
+                                    <g filter="url(#Filter_0)">
+                                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.641 L46.303,43.641 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.202 L43.676,22.202 L38.422,31.390 L33.168,22.202 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.006 L37.108,9.184 L26.600,9.184 L31.854,-0.006 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.641 L12.151,34.451 L17.404,43.641 L6.897,43.641 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.202 L25.286,31.390 L20.032,22.202 L30.540,22.202 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z" />
+                                    </g>
+                                    <text font-family="Raleway" fill="rgb(255, 255, 255)" font-size="34px" x="66px" y="41.062px">Waxom</text>
+                                </svg></div>
+                            <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit, sed diam<br />nonummy
+                                nibh euismod
+                                tincidunt ut <br />laoreet dolore magna aliquam erat<br />volutpat. Ut wisi enim ad
+                                minim<br />veniam,
+                                quis nostrud exerci suscipit<br />lobortis claritatem.</p>
+                            <div></div>
+                            <a href="#" class="read-more-link white-text">
+                                <div>Read More</div>
+                                <div class="section-8__text-arrow white-arrow"></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 footer__top_section-2">
+                            <h3>Recent Posts</h3>
+                            <div class="footer__menu">
+                                <div class="footer__menu-content">
+                                    <div class="footer__menu-content-date">September 08, 2015</div>
+                                    <p>Lorem ipsum dolor sit amet, consec-<br />tetuer adipiscing elit</p>
+                                </div>
+                                <div class="footer__menu-divider"></div>
+                                <div class="footer__menu-content">
+                                    <div class="footer__menu-content-date">September 08, 2015</div>
+                                    <p>Diam nonummy nibh euismod tincid-<br />unt ut laoreet dolore magna</p>
+                                </div>
+                                <div class="footer__menu-divider"></div>
+                                <div class="footer__menu-content">
+                                    <div class="footer__menu-content-date">September 08, 2015</div>
+                                    <p>Claritas est etiam processus dynamic-<br />us, qui sequitur mutationem per seac-<br />ula
+                                        quarta decima</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 footer__top_section-3">
+                            <h3>Our Twitter</h3>
+                            <div class="footer__menu">
+                                <div class="footer__menu-content">
+                                    <p><span><a href="#" class="link-twitter">@waxom</a></span> Cum soluta nobis
+                                        eleifend option congue nihil imperdiet doming</p>
+                                    <div class="footer__menu-content-date">3 mins ago</div>
+                                </div>
+                                <div class="footer__menu-divider"></div>
+                                <div class="footer__menu-content">
+                                    <p>Mirum est <span><a href="#" class="link-twitter">#envato</a></span> notare quam
+                                        littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                                    <div class="footer__menu-content-date">5 hours ago</div>
+                                </div>
+                                <div class="footer__menu-divider"></div>
+                                <div class="footer__menu-content">
+                                    <p>Soluta nobis option <a href="#" class="link-web">bit.ly/1Hniso7</a></p>
+                                    <div class="footer__menu-content-date">20 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 footer__top_section-4">
+                            <h3>Dribbble Widget</h3>
+                            <div class="footer__dribblePics">
+                                <div class="footer__dribblePic"><img src="./images/footer bg photo.png" /></div>
+                                <div class="footer__dribblePic"><img src="./images/footer bg photo-1.png" /></div>
+                                <div class="footer__dribblePic"><img src="./images/footer bg photo-2.png" /></div>
+                                <div class="footer__dribblePic"><img src="./images/footer bg photo-3.png" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom_content">
+                    <div class="footer__bottom">
+                        <div class="footer__menu footer__menu-h footer__bottom-left">
+                            <p>Copyright © 2015 <span style="color: var(--color-text-lightgrey)">Waxom</span></p>
+                            <div class="footer__menu-divider-v"></div>
+                            <a href="#" class="footer__bottom_link">Privacy Policy</a>
+                            <div class="footer__menu-divider-v"></div>
+                            <a href="#" class="footer__bottom_link">FAQ</a>
+                            <div class="footer__menu-divider-v"></div>
+                            <a href="#" class="footer__bottom_link">Support</a>
+                        </div>
+                        <div class="footer__menu footer__menu-h footer__bottom-right">
+                            <p>Designed by <span style="color: var(--color-text-lightgrey)">ThemeFire</span></p>
+                            <div class="footer__menu-divider-v"></div>
+                            <p>Only on <span style="color: var(--color-text-lightgrey)">Envato Market</span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

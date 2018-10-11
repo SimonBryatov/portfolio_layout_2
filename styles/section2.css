@@ -1,0 +1,41 @@
+.section-2 {
+    height: 700px;
+    background-size: cover;
+    background: url("../images/s2Background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2__text {
+    flex-basis: 23%;
+    width: 61%;
+    min-width: 1171px;
+    position: relative;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-2__image-container {
+    position: relative;
+    top: 3px;
+}
+
+.section-2__text-1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-text-darkgrey)
+}
+
+.section-2__text-2 {
+    font-size: 16px;
+    width: 770px;
+    color: var(--color-text-lightgrey)
+}

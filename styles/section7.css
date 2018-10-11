@@ -1,0 +1,44 @@
+.section-7 {
+    height: 300px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.section-7__content {
+    height: 60.3%;
+    flex-basis: 61%;
+    min-width: 1171px;
+}
+
+.info-tab {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.info-tab__icon--active {
+    fill: var(--color-main-2)
+}
+
+.info-tab__header {
+    font-size: 48px;
+}
+
+.info-tab__text {
+    color: var(--color-main-2);
+    position: relative;
+    bottom: 9px;
+    white-space: nowrap;
+}
+
+.info-tab__footer {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+}
+
+.info-tab__category_tab-field-4--active {
+    background-color: var(--color-main-2);
+}

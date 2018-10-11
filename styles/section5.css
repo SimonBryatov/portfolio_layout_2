@@ -1,0 +1,42 @@
+.section-5 {
+    height: 707px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/s5Background.png")
+}
+
+.section-5__content {
+    height: 295px;
+    flex-basis: 29%;
+    min-width: 1171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.section-5__play-btn {
+    fill: white;
+}
+
+.section-5__play-btn-icon:hover .section-5__play-btn {
+    fill: var(--color-main-2);
+}
+
+.section-5__title {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+.section-5__text {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 560px;
+}
+
+.section-5__videotime {
+    color: var(--color-main-2);
+}

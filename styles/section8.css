@@ -1,0 +1,168 @@
+.section-8 {
+    height: 753px;
+    display: flex;
+}
+
+.section-8__content {
+    display: flex;
+    flex-basis: 61%;
+    min-width: 1171px;
+    height: 605px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.section-8__content>p {
+    line-height: 1.7;
+    width: 770px;
+}
+
+.section-8__cards {
+    width: 100%;
+}
+
+.section-8__card {
+    height: 396px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-8__card_image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.section-8__card_image-container .slider_dots-container {
+    position: absolute;
+    margin-top: 189px;
+    margin-left: 138px;
+}
+
+
+.section-8__card_image-container .slider_dots {
+    width: 100px;
+}
+
+.section-8__card_description {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-lightgrey);
+}
+
+.section-8__card_description>div {
+    position: relative;
+    height: 87%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.section-8__card_description div a {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    color: var(--color-main-2);
+}
+
+.section-8__card_description div p {
+    font-size: 14px;
+}
+
+.section-8__text-arrow {
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 7px;
+    top: 1px;
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent var(--color-main-2);
+}
+
+.section-8__card-datebox {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.section-8__card-datebox-day {
+    font-size: 24px;
+    padding: 8px 15px 8px 15px;
+    background-color: #363636;
+}
+
+.section-8__card-datebox-month {
+    font-size: 12px;
+    padding: 8px 15px 8px 15px;
+    background-color: #252525;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-8__card-dots {
+    position: absolute;
+}
+
+.section-8__card-image_darken-cap {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* align-self: center; */
+    width: 370px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+
+.section-8__card:hover .section-8__card-datebox {
+    z-index: 2;
+}
+
+.section-8__card:hover .section-8__card-datebox-day {
+    background-color: var(--color-main-2);
+}
+
+.section-8__card:hover .section-8__card-datebox-month {
+    background-color: #a48d72;
+}
+
+.section-8__card:hover .section-8__card-image_darken-cap {
+    display: flex;
+}
+
+.section-8__card:hover .section-8__card_description {
+    background-color: var(--color-main-3);
+}
+
+.section-8__card:hover .section-8__card_description h5 {
+    color: var(--color-main-2);
+}
+
+.section-8__card:hover .section-8__card_description p {
+    color: white;
+}
+
+.section-8__arrows {
+    width: 53px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-8__arrow {
+    fill: var(--color-text-lightgrey);
+}
+
+.section-8__arrow-container:hover .section-8__arrow {
+    fill: var(--color-main-2);
+}

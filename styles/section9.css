@@ -1,0 +1,13 @@
+.section-9 {
+    height: 489px;
+    display: flex;
+    background: url("../images/s9Background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-9__content {
+    flex-basis: 61%;
+    min-width: 1171px;
+}
